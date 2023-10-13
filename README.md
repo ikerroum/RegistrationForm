@@ -7,4 +7,5 @@ This project, titled "Interactive HTML/CSS Form," is a beginner-friendly web dev
 List the technologies and tools used in my project:
 
 HTML
+AND
 CSS
