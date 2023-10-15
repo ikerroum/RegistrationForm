@@ -23,11 +23,63 @@
         </label>
         <label for="new-password"
           >Create a New Password:
-          <input required id="new-password" type="password" minlength="8" />
+          <input
+            required
+            id="new-password"
+            type="password"
+            pattern="[a-z0-5]{8,}"
+          />
         </label>
       </fieldset>
-      <fieldset></fieldset>
-      <fieldset></fieldset>
+      <fieldset>
+        <legend>Account type (required)</legend>
+        <label for="personal-account"
+          ><input
+            id="personal-account"
+            type="radio"
+            name="account-type"
+            checked
+          />
+          Personal
+        </label>
+        <label for="business-account"
+          ><input id="business-account" type="radio" name="account-type" />
+          Business</label
+        >
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture">
+          Upload a profile picture:
+          <input type="file" id="profile-picture" />
+        </label>
+        <label for="age">
+          Input your age (years):
+          <input id="age" type="number" min="13" max="80" />
+        </label>
+        <label for="referrer">
+          How did you hear about us?
+          <select name="" id="referrer">
+            <option value="">(select one)</option>
+            <option value="1">facebook</option>
+            <option value="2">tiktok</option>
+            <option value="3">instagram</option>
+            <option value="4">other</option>
+          </select>
+        </label>
+        <label for="bio">
+          Provide a bio:
+          <textarea name="" id="bio" cols="30" rows="10"></textarea>
+        </label>
+      </fieldset>
+
+      <label for="terms-and-conditions">
+        <input type="checkbox" required id="terms-and-conditions" />
+        I accept the
+        <a href="https://www.freecodecamp.org/news/terms-of-service/"
+          >terms and conditions</a
+        >
+      </label>
+
       <input type="submit" value="Submit" />
     </form>
   </body>
